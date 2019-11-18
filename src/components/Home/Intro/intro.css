@@ -10,19 +10,23 @@
 .intro h1 {
   color: white;
   font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 2em;
 }
 
 .intro h2 {
   color: #00d363;
   font-size: 0.7rem;
+  margin: 0;
+  margin-bottom: 1.5em;
 }
 
 .intro form {
   border-radius: 5px;
   display: flex;
-  margin-top: 30px;
   overflow: hidden;
   width: 90%;
+  max-width: 1000px;
 }
 
 .intro input,
@@ -43,4 +47,20 @@
   color: white;
   flex-shrink: 0;
   padding: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1rem;
+  }
 }
