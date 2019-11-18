@@ -1,11 +1,16 @@
 import React from "react";
-import "./main.css";
-import Nav from "./Navigation/Navigation";
+import "./Header.css";
+import NavLg from "./Navigation/large/Nav";
+import NavSm from "./Navigation/small/Nav";
 
 function Header() {
   return (
     <header className="header">
-      <Nav></Nav>
+      <div className="nav__banner">
+        <a href="/home">Hostza</a>
+      </div>
+      <NavLg></NavLg>
+      <NavSm></NavSm>
     </header>
   );
 }

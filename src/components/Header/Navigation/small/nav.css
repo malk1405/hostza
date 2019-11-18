@@ -1,0 +1,85 @@
+.nav-sm {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+button.show-nav {
+  background-color: green;
+  border: none;
+  min-height: 30px;
+  min-width: 30px;
+  max-height: 30px;
+  max-width: 30px;
+  outline: none;
+}
+
+.nav-sm__list {
+  background-color: white;
+  left: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 95%;
+  visibility: hidden;
+}
+
+.nav-sm__list--visible {
+  visibility: visible;
+}
+
+.nav-sm__sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-sm__link,
+.nav-sm__sublink {
+  background-color: white;
+  color: #4a3600;
+  display: block;
+  font-size: 0.9rem;
+  height: 0;
+  line-height: 1.5em;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav-sm__link {
+  padding-left: 20px;
+  position: relative;
+}
+
+.nav-sm__link[data-symbol]::after {
+  content: attr(data-symbol);
+  font-size: 1.2em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-sm__sublink {
+  padding-left: 40px;
+}
+
+.nav-sm__link:hover,
+.nav-sm__sublink:hover {
+  background-color: #eee;
+}
+
+.nav-sm__list--visible .nav-sm__link,
+.nav-sm__list--visible .nav-sm__sublist--visible .nav-sm__sublink {
+  height: 1.5em;
+}
+
+@media (min-width: 992px) {
+  .nav-sm {
+    display: none;
+  }
+}
