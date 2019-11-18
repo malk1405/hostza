@@ -5,13 +5,57 @@
 }
 
 button.show-nav {
-  background-color: green;
+  background-color: transparent;
   border: none;
-  min-height: 30px;
-  min-width: 30px;
   max-height: 30px;
   max-width: 30px;
+  margin-right: 20px;
+  min-height: 30px;
+  min-width: 30px;
+  position: relative;
   outline: none;
+}
+
+button.show-nav .hamburger,
+button.show-nav .hamburger::before,
+button.show-nav .hamburger::after {
+  background-color: white;
+  display: block;
+  height: 3px;
+  position: absolute;
+  transition: 0.3s;
+  transform-origin: center;
+  width: 25px;
+}
+
+button.show-nav .hamburger {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.show-nav .hamburger::before {
+  content: "";
+  top: 8px;
+}
+
+button.show-nav .hamburger::after {
+  content: "";
+  bottom: 8px;
+}
+
+button.show-nav .hamburger--cross {
+  background-color: transparent;
+}
+
+button.show-nav .hamburger--cross::before {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+button.show-nav .hamburger--cross::after {
+  bottom: 0;
+  transform: rotate(-225deg);
 }
 
 .nav-sm__list {

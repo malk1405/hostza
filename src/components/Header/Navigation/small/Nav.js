@@ -42,12 +42,16 @@ function Navigation() {
   };
 
   let classes = "nav-sm__list";
-  if (isExpanded) classes += " nav-sm__list--visible";
+  let hamburgerClasses = "hamburger";
+  if (isExpanded) {
+    classes += " nav-sm__list--visible";
+    hamburgerClasses += " hamburger--cross";
+  }
 
   return (
     <nav role="navigation" className="nav-sm">
       <button className="show-nav" onClick={toggleMenu}>
-        {isExpanded ? "Hide" : "Show"}
+        <span className={hamburgerClasses}></span>
       </button>
       <ul className={classes}>{listItems}</ul>
     </nav>
