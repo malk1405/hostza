@@ -7,9 +7,9 @@
 button.show-nav {
   background-color: transparent;
   border: none;
+  margin: 10px 20px;
   max-height: 30px;
   max-width: 30px;
-  margin-right: 20px;
   min-height: 30px;
   min-width: 30px;
   position: relative;
