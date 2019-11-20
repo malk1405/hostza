@@ -1,0 +1,2 @@
+(this.webpackJsonphostza=this.webpackJsonphostza||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var o=t(0),r=t.n(o),a=t(2),c=t.n(a);var l=function(){return r.a.createElement("h1",null,"Hello, world")};t(8);c.a.render(r.a.createElement(l,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.6d7cf251.chunk.js.map
