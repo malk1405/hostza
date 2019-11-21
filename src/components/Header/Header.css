@@ -9,6 +9,10 @@
   right: 0;
 }
 
+.nav__banner img {
+  height: 1.5rem;
+}
+
 .nav__chat {
   display: none;
 }
