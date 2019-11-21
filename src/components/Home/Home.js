@@ -1,6 +1,7 @@
 import React from "react";
 import Intro from "./Intro/Intro";
 import Hosting from "./Hosting/Hosting";
+import Features from "./Features/Features";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <Intro></Intro>
         <Hosting></Hosting>
       </main>
+      <Features></Features>
     </React.Fragment>
   );
 }
