@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import Hamburger from "./Hamburger";
 import links from "../links";
 
 import "./nav.css";
@@ -42,17 +43,13 @@ function Navigation() {
   };
 
   let classes = "nav-sm__list";
-  let hamburgerClasses = "hamburger";
   if (isExpanded) {
     classes += " nav-sm__list--visible";
-    hamburgerClasses += " hamburger--cross";
   }
 
   return (
     <nav role="navigation" className="nav-sm">
-      <button className="show-nav" onClick={toggleMenu}>
-        <span className={hamburgerClasses}></span>
-      </button>
+      <Hamburger onClick={toggleMenu} opened={isExpanded}></Hamburger>
       <ul className={classes}>{listItems}</ul>
     </nav>
   );
