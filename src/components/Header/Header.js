@@ -9,7 +9,7 @@ function Header() {
     <header className="header">
       <div className="nav__banner">
         <a href="/home">
-          <img src="logo.png" alt="logo"></img>
+          <img src="assets/img/logo.png" alt="logo"></img>
         </a>
       </div>
       <NavLg></NavLg>
