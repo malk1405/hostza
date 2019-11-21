@@ -1,0 +1,23 @@
+.footer {
+  background-color: #2e004b;
+}
+
+.footer__top {
+  border-bottom: 1px solid #919191;
+  padding: 60px 0 30px;
+}
+
+.footer__copyright {
+  padding: 30px 0;
+}
+
+.footer__copyright p {
+  color: #919191;
+  margin: 0;
+  text-align: center;
+}
+
+.footer__copyright a {
+  color: #00d363;
+  text-decoration: none;
+}
