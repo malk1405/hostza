@@ -57,6 +57,8 @@ li {
   border: 1px solid #00d363;
   border-radius: 2em;
   color: #00d363;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 1rem;
   line-height: 1em;
   padding: 1em 1.5em;
@@ -65,4 +67,14 @@ li {
 .btn:hover {
   background-color: #00d363;
   color: white;
+}
+
+.btn--inverse {
+  background-color: #00d363;
+  color: white;
+}
+
+.btn--inverse:hover {
+  background-color: transparent;
+  color: #00d363;
 }

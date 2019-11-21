@@ -11,6 +11,10 @@ function Header() {
       </div>
       <NavLg></NavLg>
       <NavSm></NavSm>
+      <div className="nav__chat">
+        <button className="nav__login">Log In</button>
+        <button className="btn btn--inverse">Live chat</button>
+      </div>
     </header>
   );
 }
