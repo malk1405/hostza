@@ -18,16 +18,38 @@ h6 {
 }
 
 .container {
+  margin: 0 auto;
+  max-width: 540px;
   padding: 0 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 .btn {
   background-color: transparent;
   border: 1px solid #00d363;
-  border-radius: 0.8em;
+  border-radius: 2em;
   color: #00d363;
   font-size: 1rem;
-  line-height: 1.6em;
+  line-height: 1em;
+  padding: 1em 1.5em;
 }
 
 .btn:hover {

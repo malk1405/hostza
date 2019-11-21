@@ -69,3 +69,9 @@
     flex-basis: 49%;
   }
 }
+
+@media (min-width: 1200px) {
+  .hosting__plan {
+    flex-basis: 24%;
+  }
+}
