@@ -18,7 +18,7 @@ const Support = ({ className }) => {
 
 const StyledSupport = styled(Support)`
   background-image: url(${img});
-  background-position: center right 55%;
+  background-position: center right 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0;
