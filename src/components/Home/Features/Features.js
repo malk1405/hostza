@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./Features.css";
+import Container from "../../Container/Container";
 
 const tabs = [
   {
@@ -77,15 +78,17 @@ function Features() {
   }, [option]);
 
   return (
-    <section className="container features">
-      <section className="features__header">
-        <h2 className="features__title">Core features</h2>
-        <div className="features__tabs">
-          <ul>{tabsHeader}</ul>
-        </div>
+    <Container>
+      <section className="features">
+        <section className="features__header">
+          <h2 className="features__title">Core features</h2>
+          <div className="features__tabs">
+            <ul>{tabsHeader}</ul>
+          </div>
+        </section>
+        <section className="features__body">{tabsBody}</section>
       </section>
-      <section className="features__body">{tabsBody}</section>
-    </section>
+    </Container>
   );
 }
 
