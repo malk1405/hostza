@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "./Intro/Intro";
 import Hosting from "./Hosting/Hosting";
 import Features from "./Features/Features";
+import Support from "./Support/Support";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Hosting></Hosting>
       </main>
       <Features></Features>
+      <Support></Support>
     </React.Fragment>
   );
 }
