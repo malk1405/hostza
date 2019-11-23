@@ -19,7 +19,7 @@ function Hosting() {
         <section>
           <ul className="hosting__plans">
             {plans.map(({ title, description, price }) => (
-              <li className="hosting__plan">
+              <li className="hosting__plan" key={title}>
                 <div className="plan__logo"></div>
                 <h3 className="plan__title">{title}</h3>
                 <p className="plan__description">{description}</p>
