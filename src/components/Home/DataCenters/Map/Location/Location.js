@@ -1,7 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const Location = ({ className }) => <div className={className}></div>;
+const Location = ({ className, children, id, onClick }) => {
+  const onClickInner = () => {
+    onClick(id);
+  };
+
+  return (
+    <div className={className} onClick={onClickInner}>
+      {children}
+    </div>
+  );
+};
 
 export default styled(Location)`
   animation: shadow infinite alternate;
