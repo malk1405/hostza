@@ -1,19 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Location = ({ className, children, id, onClick }) => {
-  const onClickInner = () => {
-    onClick(id);
-  };
-
-  return (
-    <div className={className} onClick={onClickInner}>
-      {children}
-    </div>
-  );
-};
-
-export default styled(Location)`
+export default styled.div`
   animation: shadow infinite alternate;
   animation-duration: ${props => (props.duration || 1) + "s"};
   background-color: purple;

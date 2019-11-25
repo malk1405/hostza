@@ -8,15 +8,16 @@ import Tooltip from "./Tooltip/Tooltip";
 
 const Map = ({ className }) => {
   const [selectedId, setSelectedId] = useState(null);
-  const onClick = id => {
-    setSelectedId(selectedId === id ? null : id);
+  const onClick = e => {
+    const id = e.currentTarget.dataset.id;
+    setSelectedId(selectedId => (selectedId === id ? null : id));
   };
 
   return (
     <div className={className}>
       <img src={Image} alt="map"></img>
       {locations.map(({ id, info, coord }) => (
-        <Location key={id} {...coord} id={id} onClick={onClick}>
+        <Location key={id} {...coord} data-id={id} onClick={onClick}>
           <Tooltip {...info} visible={selectedId === id}></Tooltip>
         </Location>
       ))}
