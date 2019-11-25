@@ -1,6 +1,7 @@
-export default [
+import generateId from "../../../../../utils/generateId";
+
+export default generateId([
   {
-    id: "1",
     info: {
       country: "Russia",
       city: "Moscow",
@@ -13,7 +14,6 @@ export default [
     }
   },
   {
-    id: "2",
     info: {
       country: "Spain",
       city: "Madrid",
@@ -26,7 +26,6 @@ export default [
     }
   },
   {
-    id: "3",
     info: {
       country: "England",
       city: "London",
@@ -39,7 +38,6 @@ export default [
     }
   },
   {
-    id: "4",
     info: {
       country: "Argentina",
       city: "Buenos Aires",
@@ -51,4 +49,4 @@ export default [
       duration: 2.1
     }
   }
-];
+]);

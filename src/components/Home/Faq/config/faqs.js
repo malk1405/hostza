@@ -1,4 +1,6 @@
-const faqs = [
+import generateId from "../../../../utils/generateId";
+
+export default generateId([
   {
     question: "Is WordPress hosting worth it?",
     answer:
@@ -24,6 +26,4 @@ const faqs = [
     answer:
       "Our set he for firmament morning sixth subdue darkness creeping gathered divide our  let god moving. Moving in fourth air night bring upon"
   }
-];
-
-export default faqs.map((faq, id) => ({ id, ...faq }));
+]);

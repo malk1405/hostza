@@ -1,4 +1,6 @@
-export default [
+import generateId from "../../../utils/generateId";
+
+export default generateId([
   {
     title: "Share Hosting",
     description: "Easy drag and drop fully customizable mobile friendly",
@@ -19,4 +21,4 @@ export default [
     description: "Easy drag and drop fully customizable mobile friendly",
     price: 3.5
   }
-];
+]);
