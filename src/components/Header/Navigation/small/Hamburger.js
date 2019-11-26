@@ -5,7 +5,6 @@ const Button = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin: 10px 20px;
   max-height: 30px;
   max-width: 30px;
   min-height: 30px;

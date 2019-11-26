@@ -1,26 +1,40 @@
 import React from "react";
-import "./Header.css";
+import styled from "styled-components";
+
 import NavLg from "./Navigation/large/Nav";
 import NavSm from "./Navigation/small/Nav";
 
 import { InversedButton, TransparentButton } from "../Button/Button";
+import Banner from "./Banner/Banner";
+import Chat from "./Chat/Chat";
 
-function Header() {
-  return (
-    <header className="header">
-      <div className="nav__banner">
-        <a href="/home">
-          <img src="assets/img/logo.png" alt="logo"></img>
-        </a>
-      </div>
-      <NavLg></NavLg>
-      <NavSm></NavSm>
-      <div className="nav__chat">
-        <TransparentButton>Log In</TransparentButton>
-        <InversedButton>Live chat</InversedButton>
-      </div>
-    </header>
-  );
-}
+const Header = styled.header`
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  height: 90px;
+  left: 0;
+  margin: 0;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+`;
 
-export default Header;
+const StyledHeader = () => (
+  <Header>
+    <Banner>
+      <a href="/home">
+        <img src="assets/img/logo.png" alt="logo"></img>
+      </a>
+    </Banner>
+    <NavLg></NavLg>
+    <NavSm></NavSm>
+    <Chat>
+      <TransparentButton>Log In</TransparentButton>
+      <InversedButton>Live chat</InversedButton>
+    </Chat>
+  </Header>
+);
+
+export default StyledHeader;

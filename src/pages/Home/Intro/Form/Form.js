@@ -29,7 +29,7 @@ const Form = styled.form`
   }
 
   ${media.xl`
-    width: 50%;
+    width: 65%;
   `}
 `;
 
