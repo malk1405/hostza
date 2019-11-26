@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+
+import useId from "../../../../hooks/useId";
 
 import Image from "./Image/map.svg";
 import Location from "./Location/Location";
@@ -7,11 +9,7 @@ import locations from "./config/locations";
 import Tooltip from "./Tooltip/Tooltip";
 
 const Map = ({ className }) => {
-  const [selectedId, setSelectedId] = useState(null);
-  const onClick = e => {
-    const id = e.currentTarget.dataset.id;
-    setSelectedId(selectedId => (selectedId === id ? null : id));
-  };
+  const { selectedId, onClick } = useId(null);
 
   return (
     <div className={className}>
