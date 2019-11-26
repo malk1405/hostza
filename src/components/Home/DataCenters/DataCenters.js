@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
 
 import useId from "../../../hooks/useId";
-import locations from "./Map/config/locations";
+import locations from "./config/locations";
 
 import Container from "../../Container/Container";
 import Map from "./Map/Map";
-import Location from "./Map/Location/Location";
-import Tooltip from "./Map/Tooltip/Tooltip";
-import Image from "./Map/Image/map.svg";
+import Location from "./Location/Location";
+import Tooltip from "./Tooltip/Tooltip";
+import Image from "./Image/map.svg";
 
 const Section = styled.section`
   padding-top: 200px;

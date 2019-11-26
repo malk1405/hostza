@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./intro.css";
-
 import IntroSection from "../../Intro/Intro";
 import Header from "./Header/Header";
 import Description from "./Description/Description";

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import Question from "../Question/Question";
-import { AnswerContainer, Answer } from "../Answer/Answer";
+import Question from "./Question/Question";
+import { AnswerContainer, Answer } from "./Answer/Answer";
 
 const Item = styled.div`
   border: 1px solid #e9e5ec;
