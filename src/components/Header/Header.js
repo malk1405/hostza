@@ -12,10 +12,11 @@ const Header = styled.header`
   align-items: center;
   display: flex;
   font-size: 1rem;
-  height: 90px;
+  height: 60px;
   left: 0;
   margin: 0;
-  padding: 0 20px;
+  padding: 20px;
+  padding-bottom 10px;
   position: absolute;
   right: 0;
   z-index: 1;
