@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "../../../../../utils/media";
+import media from "../../../../utils/media";
 
 const Title = styled.h3`
   color: white;
