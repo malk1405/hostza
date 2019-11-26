@@ -1,68 +1,69 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
 
-import "./Features.css";
-import Container from "../../../components/Container/Container";
 import tabs from "./config/tabs";
 
-function Features() {
+import Container from "../../../components/Container/Container";
+import Header, { Title, Tabs } from "./Header/Header";
+import Body, {
+  Pane,
+  Feature,
+  Icon,
+  Info,
+  Title as FeatureTitle,
+  Text
+} from "./Body/Body";
+
+const Features = styled.section`
+  padding: 100px 0;
+`;
+
+const StyledFeatures = () => {
   const [option, setOption] = useState(tabs[0].id);
-  const [tabsHeader, setTabsHeader] = useState([]);
-  const [tabsBody, setTabsBody] = useState([]);
 
   const onChange = e => {
     setOption(e.target.value);
   };
 
-  useEffect(() => {
-    setTabsHeader(
-      tabs.map(({ id, text }) => (
-        <li className="features__tab" key={id}>
-          <input
-            type="radio"
-            name="feature"
-            id={`${id}-features`}
-            value={id}
-            checked={option === id}
-            onChange={onChange}
-          ></input>
-          <label htmlFor={`${id}-features`}>{text}</label>
-        </li>
-      ))
-    );
-
-    setTabsBody(
-      tabs.map(({ id, features }) => (
-        <section
-          className={`tab-pane${option === id ? " tab-pane--active" : ""}`}
-          key={`${id}_feature`}
-        >
-          {features.map(({ text, name }, i) => (
-            <section className="feature" key={`${id}_feature_${i}`}>
-              <div className="feature__icon"></div>
-              <div className="feature__info">
-                <h3 className="feature__title">{name}</h3>
-                <p className="feature__text">{text}</p>
-              </div>
-            </section>
-          ))}
-        </section>
-      ))
-    );
-  }, [option]);
-
   return (
-    <Container>
-      <section className="features">
-        <section className="features__header">
-          <h2 className="features__title">Core features</h2>
-          <div className="features__tabs">
-            <ul>{tabsHeader}</ul>
-          </div>
-        </section>
-        <section className="features__body">{tabsBody}</section>
-      </section>
-    </Container>
+    <Features>
+      <Container>
+        <Header>
+          <Title>Core features</Title>
+          <Tabs>
+            {tabs.map(({ id, text }) => (
+              <li key={id}>
+                <input
+                  type="radio"
+                  name="feature"
+                  id={`feature-${id}`}
+                  value={id}
+                  checked={option === id}
+                  onChange={onChange}
+                ></input>
+                <label htmlFor={`feature-${id}`}>{text}</label>
+              </li>
+            ))}
+          </Tabs>
+        </Header>
+        <Body>
+          {tabs.map(({ id, features }) => (
+            <Pane isActive={option === id} key={`${id}_feature`}>
+              {features.map(({ text, name, iconColor }, i) => (
+                <Feature key={`${id}_feature_${i}`}>
+                  <Icon color={iconColor}></Icon>
+                  <Info>
+                    <FeatureTitle>{name}</FeatureTitle>
+                    <Text>{text}</Text>
+                  </Info>
+                </Feature>
+              ))}
+            </Pane>
+          ))}
+        </Body>
+      </Container>
+    </Features>
   );
-}
+};
 
-export default Features;
+export default StyledFeatures;
