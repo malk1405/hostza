@@ -1,21 +1,8 @@
-import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
 
 import media from "../../../../../utils/media";
 
-const Tooltip = ({ className, country, city, description }) => (
-  <div className={className}>
-    <FontAwesomeIcon icon={faMapMarker}></FontAwesomeIcon>
-    <h4>
-      {city}, {country}
-    </h4>
-    <p>{description}</p>
-  </div>
-);
-
-export default styled(Tooltip)`
+export default styled.div`
   background: white;
   border-radius 10px;
   bottom: 22px;
