@@ -6,17 +6,7 @@ import img from "./Image/support_bg.png";
 import Info from "./Info/Info";
 import media from "../../../utils/media";
 
-const Support = ({ className }) => {
-  return (
-    <section className={className}>
-      <Container>
-        <Info></Info>
-      </Container>
-    </section>
-  );
-};
-
-const StyledSupport = styled(Support)`
+const Section = styled.section`
   background-image: url(${img});
   background-position: center right 50%;
   background-repeat: no-repeat;
@@ -32,4 +22,14 @@ const StyledSupport = styled(Support)`
   `}
 `;
 
-export default StyledSupport;
+const Support = () => {
+  return (
+    <Section>
+      <Container>
+        <Info></Info>
+      </Container>
+    </Section>
+  );
+};
+
+export default Support;
