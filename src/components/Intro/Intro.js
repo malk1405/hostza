@@ -9,8 +9,9 @@ const Intro = styled.section`
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
+  min-height: ${props => props.height || "auto"};
+  padding: 120px 0;
   position: relative;
 `;
 
@@ -21,8 +22,8 @@ const Centered = styled.div`
   justify-content: center;
 `;
 
-export default ({ children }) => (
-  <Intro>
+export default ({ height, children }) => (
+  <Intro height={height}>
     <Container>
       <Centered>{children}</Centered>
     </Container>
