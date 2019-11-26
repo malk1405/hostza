@@ -45,8 +45,8 @@ const Button = styled.button`
   }
 `;
 
-const Hamburger = ({ onClick, opened }) => (
-  <Button onClick={onClick} opened={opened}>
+const Hamburger = props => (
+  <Button {...props}>
     <span></span>
   </Button>
 );
