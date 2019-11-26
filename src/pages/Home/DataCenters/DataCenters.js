@@ -7,7 +7,7 @@ import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
 import useId from "../../../hooks/useId";
 import locations from "./config/locations";
 
-import Container from "../../Container/Container";
+import Container from "../../../components/Container/Container";
 import Map from "./Map/Map";
 import Location from "./Location/Location";
 import Tooltip from "./Tooltip/Tooltip";

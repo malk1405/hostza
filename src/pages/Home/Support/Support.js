@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Container from "../../Container/Container";
+import Container from "../../../components/Container/Container";
 import img from "./Image/support_bg.png";
 import Info from "./Info/Info";
 import media from "../../../utils/media";

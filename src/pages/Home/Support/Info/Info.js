@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Description from "./Description/Description";
-import { InversedButton } from "../../../Button/Button";
+import { InversedButton } from "../../../../components/Button/Button";
 import Phone from "./Phone/Phone";
 import Title from "./Title/Title";
 import media from "../../../../utils/media";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import IntroSection from "../../Intro/Intro";
+import IntroSection from "../../../components/Intro/Intro";
 import Header from "./Header/Header";
 import Description from "./Description/Description";
 import Form from "./Form/Form";

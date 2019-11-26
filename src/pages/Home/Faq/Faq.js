@@ -5,7 +5,7 @@ import faqs from "./config/faqs";
 import useId from "../../../hooks/useId";
 
 import Item from "./Item/Item";
-import Container from "../../Container/Container";
+import Container from "../../../components/Container/Container";
 import Title from "./Title/Title";
 
 const Faq = styled.section`

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./Features.css";
-import Container from "../../Container/Container";
+import Container from "../../../components/Container/Container";
 import tabs from "./config/tabs";
 
 function Features() {
