@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import Question from "../Question/Question";
-import { Container, Text } from "../Answer/Answer";
+import { AnswerContainer, Answer } from "../Answer/Answer";
 
 const Item = styled.div`
   border: 1px solid #e9e5ec;
@@ -12,15 +12,13 @@ const Item = styled.div`
 
 const StyledItem = ({ onClick, id, isOpened, question, answer }) => {
   const answerRef = useRef(null);
-  const onClickInner = () => {
-    onClick(id);
-  };
+
   return (
-    <Item onClick={onClickInner}>
+    <Item onClick={onClick} data-id={id}>
       <Question>{question}</Question>
-      <Container height={isOpened ? answerRef.current.scrollHeight : 0}>
-        <Text ref={answerRef}>{answer}</Text>
-      </Container>
+      <AnswerContainer height={isOpened ? answerRef.current.scrollHeight : 0}>
+        <Answer ref={answerRef}>{answer}</Answer>
+      </AnswerContainer>
     </Item>
   );
 };

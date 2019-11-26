@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import faqs from "./config/faqs";
+import useId from "../../../hooks/useId";
 
 import Item from "./Item/Item";
 import Container from "../../Container/Container";
@@ -12,10 +13,7 @@ const Faq = styled.section`
 `;
 
 const StyledFaq = () => {
-  const [openedId, setOpenedId] = useState(null);
-  const onClick = id => {
-    setOpenedId(openedId => (openedId !== id ? id : null));
-  };
+  const { selectedId, onClick } = useId(null);
 
   return (
     <Faq>
@@ -26,7 +24,7 @@ const StyledFaq = () => {
             key={el.id}
             onClick={onClick}
             {...el}
-            isOpened={el.id === openedId}
+            isOpened={el.id === selectedId}
           ></Item>
         ))}
       </Container>

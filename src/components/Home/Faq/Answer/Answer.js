@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import media from "../../../../utils/media";
 
-const Container = styled.div`
+const AnswerContainer = styled.div`
   height: ${props => `${props.height}px` || "auto"};
   transition: height 0.3s;
   overflow: hidden;
 `;
 
-const Text = styled.p`
+const Answer = styled.p`
   font-size: 12px;
   font-color: #212529;
   margin: 0;
@@ -18,4 +18,4 @@ const Text = styled.p`
   `}
 `;
 
-export { Container, Text };
+export { AnswerContainer, Answer };
