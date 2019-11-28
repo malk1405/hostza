@@ -11,6 +11,7 @@ const Intro = styled.section`
   flex-direction: column;
   justify-content: center;
   min-height: ${props => props.height || "auto"};
+  text-align: center;
   padding: 120px 0;
   position: relative;
 `;
