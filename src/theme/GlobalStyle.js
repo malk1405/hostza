@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap");
 
 * {
@@ -23,7 +26,9 @@ h6 {
 
 ul,
 li {
-  list-style: none;
+ list-style: none;
   margin: 0;
   padding: 0;
-}
+}`;
+
+export default GlobalStyle;
