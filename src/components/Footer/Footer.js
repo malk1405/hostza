@@ -1,18 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 import Container from "../Container/Container";
-import "./footer.css";
+import Top from "./Top/Top";
+import Copyright from "./Copyright/Copyright";
 
-function Footer() {
+const Footer = styled.footer`
+  background-color: #2e004b;
+`;
+
+function StyledFooter() {
   return (
-    <footer className="footer">
+    <Footer>
       <Container>
-        <section className="footer__top"></section>
+        <Top></Top>
       </Container>
       <Container>
-        <section className="footer__copyright">
+        <Copyright>
           <p>
             Copyright ©2019 All rights reserved | This template is made with{" "}
             <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> by{" "}
@@ -24,10 +30,10 @@ function Footer() {
               Colorlib
             </a>
           </p>
-        </section>
+        </Copyright>
       </Container>
-    </footer>
+    </Footer>
   );
 }
 
-export default Footer;
+export default StyledFooter;
