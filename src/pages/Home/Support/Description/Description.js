@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 const Description = styled.p`
   color: white;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
-  line-height: 28px;
-  margin: 0;
+  line-height: 1.8;
   margin-bottom: 25px;
 `;
 

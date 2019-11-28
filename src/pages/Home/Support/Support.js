@@ -8,8 +8,9 @@ import media from "../../../utils/media";
 import Phone from "./Phone/Phone";
 import Title from "./Title/Title";
 import Description from "./Description/Description";
+import Section from "../../../components/Section/Section";
 
-const Section = styled.section`
+const StyledSection = styled(Section)`
   background-image: url(${img});
   background-position: center right 50%;
   background-repeat: no-repeat;
@@ -37,7 +38,7 @@ const Info = styled(Container)`
 
 const Support = () => {
   return (
-    <Section>
+    <StyledSection>
       <Container>
         <Info>
           <Title>24h Dedicated Support</Title>
@@ -50,7 +51,7 @@ const Support = () => {
           <Phone>+7 (XXX) XXX-XX-XX</Phone>
         </Info>
       </Container>
-    </Section>
+    </StyledSection>
   );
 };
 

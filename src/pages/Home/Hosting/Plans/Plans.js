@@ -13,7 +13,7 @@ const Plan = styled.li`
   border: 1px solid #e0cce6;
   border-radius: 5px;
   margin: 10px 0;
-  padding: 30px 15px;
+  padding: 30px 23px;
 
   ${media.md`
     flex-basis: 49%;
@@ -26,26 +26,30 @@ const Plan = styled.li`
 
 const Logo = styled.div`
   background-color: ${props => props.bgColor || "red"};
-  height: 3rem;
-  margin-bottom: 1.5rem;
-  width: 3rem;
+  height: 6.5rem;
+  margin-bottom: 3rem;
+  width: 6.5rem;
 `;
 
 const Title = styled.h3`
   color: #2e004b;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1em;
 `;
 
 const Description = styled.p``;
 
 const Price = styled.p`
-  font-size: 14px;
+  font-size: 1.4rem;
   margin: 25px 0;
 `;
 
 const Value = styled.span`
   color: #2e004b;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 0.4em;
 `;
 
 export default Plans;

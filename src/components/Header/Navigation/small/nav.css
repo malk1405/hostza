@@ -32,9 +32,9 @@
   background-color: white;
   color: #4a3600;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   height: 0;
-  line-height: 1.5em;
+  line-height: 2.5em;
   text-decoration: none;
   overflow: hidden;
   transition: 0.3s;
@@ -65,7 +65,7 @@
 
 .nav-sm__list--visible .nav-sm__link,
 .nav-sm__list--visible .nav-sm__sublist--visible .nav-sm__sublink {
-  height: 1.5em;
+  height: 2.5em;
 }
 
 @media (min-width: 992px) {

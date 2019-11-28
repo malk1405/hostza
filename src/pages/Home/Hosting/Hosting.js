@@ -5,33 +5,38 @@ import plans from "./config/plans";
 import { Button } from "../../../components/Button/Button";
 import Container from "../../../components/Container/Container";
 
-import Header from "./Header/Header";
 import Plans, {
   Plan,
   Logo,
-  Title,
+  Title as PlanTitle,
   Price,
   Value,
-  Description
+  Description as PlanDescription
 } from "./Plans/Plans";
+
+import Section, {
+  Header,
+  Title,
+  Description
+} from "../../../components/Section/Section";
 
 function Hosting() {
   return (
-    <section>
+    <Section>
       <Container>
         <Header>
-          <h2>Choose your Hosting Plan</h2>
-          <p>
+          <Title>Choose your Hosting Plan</Title>
+          <Description>
             Your domain control panel is designed for ease-of-use and allows for
             all aspects of your domains.
-          </p>
+          </Description>
         </Header>
         <Plans>
           {plans.map(({ id, title, description, price, iconColor }) => (
             <Plan key={id}>
               <Logo bgColor={iconColor}></Logo>
-              <Title>{title}</Title>
-              <Description>{description}</Description>
+              <PlanTitle>{title}</PlanTitle>
+              <PlanDescription>{description}</PlanDescription>
               <Price>
                 Start from <Value>${price}/m</Value>
               </Price>
@@ -40,7 +45,7 @@ function Hosting() {
           ))}
         </Plans>
       </Container>
-    </section>
+    </Section>
   );
 }
 

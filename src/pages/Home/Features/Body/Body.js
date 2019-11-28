@@ -51,14 +51,11 @@ const Info = styled.div`
 
 const Title = styled.h3`
   color: #1f1f1f;
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 0.5em;
 `;
 
-const Text = styled.p`
-  color: #919191;
-  line-height: 1.5em;
-`;
+const Text = styled.p``;
 
 export default Body;
 export { Pane, Feature, Icon, Info, Title, Text };

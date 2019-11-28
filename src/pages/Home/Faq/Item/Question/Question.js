@@ -3,31 +3,29 @@ import media from "../../../../../utils/media";
 
 export default styled.h3`
   color: #2e004b;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
-  padding-left: 48px;
-  position: relative;
+  vertical-align: middle;
 
   &::before {
     border: 1px solid lightgreen;
     border-radius: 50%;
     content: "?";
     color: lightgreen;
-    display: block;
-    font-size: 20px;
-    height: 24px;
-    left: 0;
-    line-height: 24px;
-    position: absolute;
+    display: inline-block;
+    font-size: 1.2em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-right: 1em;
     text-align: center;
-    width: 24px;
+    width: 1.5em;
   }
 
   ${media.md`
-    font-size: 18px;
+    font-size: 1.8rem;
   `}
 
   ${media.lg`
-    font-size: 24px;
+    font-size: 2.4rem;
   `}
 `;

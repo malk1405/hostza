@@ -8,9 +8,8 @@ const AnswerContainer = styled.div`
 `;
 
 const Answer = styled.p`
-  font-size: 12px;
+  font-size: 1.2rem;
   font-color: #212529;
-  margin: 0;
   padding: 20px 50px;
 
   ${media.md`

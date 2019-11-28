@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
@@ -12,16 +11,24 @@ import Map from "./Map/Map";
 import Location from "./Location/Location";
 import Tooltip from "./Tooltip/Tooltip";
 import Image from "./Image/map.svg";
-
-const Section = styled.section`
-  padding-top: 200px;
-`;
+import Section, {
+  Header,
+  Title,
+  Description
+} from "../../../components/Section/Section";
 
 const DataCenters = () => {
   const { selectedId, onClick } = useId(null);
   return (
     <Section>
       <Container>
+        <Header>
+          <Title>Our Data Centres</Title>
+          <Description>
+            Your domain control panel is designed for ease-of-use and allows for
+            all aspects of your domains.
+          </Description>
+        </Header>
         <Map>
           <img src={Image} alt="map"></img>
           {locations.map(({ id, info, coord }) => (

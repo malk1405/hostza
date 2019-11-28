@@ -11,7 +11,7 @@ import Chat from "./Chat/Chat";
 const Header = styled.header`
   align-items: center;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.6rem;
   height: 60px;
   left: 0;
   margin: 0;

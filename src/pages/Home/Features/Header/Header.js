@@ -13,7 +13,7 @@ const Header = styled.div`
 
 const Title = styled.h2`
   color: #2e004b;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin-bottom: 8px;
 
   ${media.md`  
@@ -34,7 +34,7 @@ const Tabs = styled.ul`
     color: #919191;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     margin-left: 1em;
     padding: 0.5em 1em 2em;
     position: relative;
@@ -56,7 +56,7 @@ const Tabs = styled.ul`
 
   ${media.md`
     & label {
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
 `}
 `;

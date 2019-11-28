@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 
 import tabs from "./config/tabs";
 
@@ -13,10 +12,7 @@ import Body, {
   Title as FeatureTitle,
   Text
 } from "./Body/Body";
-
-const Features = styled.section`
-  padding: 100px 0;
-`;
+import Section from "../../../components/Section/Section";
 
 const StyledFeatures = () => {
   const [option, setOption] = useState(tabs[0].id);
@@ -26,7 +22,7 @@ const StyledFeatures = () => {
   };
 
   return (
-    <Features>
+    <Section>
       <Container>
         <Header>
           <Title>Core features</Title>
@@ -62,7 +58,7 @@ const StyledFeatures = () => {
           ))}
         </Body>
       </Container>
-    </Features>
+    </Section>
   );
 };
 

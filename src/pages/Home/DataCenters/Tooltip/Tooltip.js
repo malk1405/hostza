@@ -30,15 +30,14 @@ export default styled.div`
 
   & h4 {
     color: #1F1F1F;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
   & p {
-    color: #919191;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 2;
   }
 
   ${media.md`
@@ -46,12 +45,11 @@ export default styled.div`
     width: 260px;
 
     & h4 {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   
     & p {
-      font-size: 14px;
-      line-height: 28px;
+      font-size: 1.4rem;
     }
   `}
 `;

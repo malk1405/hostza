@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import faqs from "./config/faqs";
 import useId from "../../../hooks/useId";
@@ -7,16 +6,13 @@ import useId from "../../../hooks/useId";
 import Item from "./Item/Item";
 import Container from "../../../components/Container/Container";
 import Title from "./Title/Title";
+import Section from "../../../components/Section/Section";
 
-const Faq = styled.section`
-  padding-top: 190px;
-`;
-
-const StyledFaq = () => {
+const Faq = () => {
   const { selectedId, onClick } = useId(null);
 
   return (
-    <Faq>
+    <Section>
       <Container>
         <Title>Frequently Ask Question</Title>
         {faqs.map(el => (
@@ -28,8 +24,8 @@ const StyledFaq = () => {
           ></Item>
         ))}
       </Container>
-    </Faq>
+    </Section>
   );
 };
 
-export default StyledFaq;
+export default Faq;
